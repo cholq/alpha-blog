@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <style>
+      div.blogpage {
+        width:100%;
+        border: 1px blue;
+      }
+     
+      header, footer {
+        color: yellow;
+        background-color: blue;
+        text-align: center;
+        clear: left;
+        padding: 1em;
+      }
+      
+      nav {
+        float: left;
+        max-width: 160px;
+        padding: 1em;
+      }
+      
+      article {
+        margin-left: 170px;
+        border-left: 1px solid gray;
+        padding: 1em;
+      }
+    </style>
+    
+  </head>
+  <body>
+    
+    <div>
+    
+      <header><h1>My Alpha Blog</h1></header>
+      
+      <nav>
+        <b>* Links *</b>
+        <ul>
+          <li><%= link_to "Home", root_path %></li>
+        </ul>
+      </nav>
+      
+      <article>
+        <h2>About the Alpha Blog</h2>
+        <p>This is the Alpha Blog I'm writing to learn Ruby on Rails. </p>
+        <p>There isn't a whole lot more to say other than that.</p>
+      </article>
+      
+      <footer>Thanks for reading!</footer>
+    
+    </div>
+    
+  </body>
+</html>
